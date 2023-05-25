@@ -42,14 +42,15 @@ export default function Home() {
     setHeight(window.innerHeight);
   }, []);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    // @ts-ignore: Object is possibly 'null'.
+    const emailtest = document.getElementById("EmailForm").value;
 
-    const email = document.getElementById("EmailForm").value;
 
     try {
       const docRef = await addDoc(collection(db, "emails"), {
-        email: email,
+        email: emailtest,
       });
       console.log(`                           
       m   
@@ -63,6 +64,7 @@ m mm    mmm    mmm   mm#mm
     }
 
     toast.success("Теперь вы в списке;)");
+    // @ts-ignore: Object is possibly 'null'.
     document.getElementById("EmailForm").value = "";
   };
 
