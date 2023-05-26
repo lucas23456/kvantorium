@@ -1,8 +1,7 @@
-{
+{  
+  "homepage": "https://lucas23456.github.io/kvantorium",
   "name": "Lico.py",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://lucas23456.github.io/fluffy-goggles",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
@@ -10,9 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@types/node": "18.11.9",
