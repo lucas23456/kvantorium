@@ -1,6 +1,5 @@
 {  
   "homepage": "https://lucas23456.github.io/kvantorium",
-  "name": "Lico.py",
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
